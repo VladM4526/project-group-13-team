@@ -1,7 +1,6 @@
 .hero {
   background-color: var(--bg-section-hero-and-header);
   color: var(--any-white-color-and-bg);
-  padding: 122px 0 40px;
 }
 
 .hero-wrapper {
@@ -29,7 +28,7 @@
 }
 
 .slider {
-  max-width: 266px;
+  min-width: 266px;
   order: -1;
 }
 
@@ -58,8 +57,8 @@
 
 .slider-button-icon {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 7px;
+  left: 10px;
   stroke: rgba(255, 255, 255, 0.5);
 }
 
@@ -117,6 +116,7 @@
   .hero-title {
     font-size: 60px;
     max-width: 100%;
+    line-height: 1.03;
   }
 
   .hero-text {
@@ -128,16 +128,20 @@
     max-width: 436px;
   }
 
+  .slider-picture {
+    width: 100%;
+  }
+
   .slider-button {
     width: 40px;
     height: 40px;
   }
 
   .slider-button-icon {
-    width: 24px;
-    height: 24px;
-    top: 6px;
-    left: 6px;
+    width: 8px;
+    height: 14px;
+    top: 11px;
+    left: 15px;
   }
 }
 
@@ -151,10 +155,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-.hero {
-  padding: 148px 0 80px;
-}
-
 .hero-wrapper {
   display: flex;
   justify-content: space-between;

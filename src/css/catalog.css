@@ -149,6 +149,7 @@ a {
   }
 
   .catalog-list {
+    min-width: 704px;
     flex-direction: row;
     gap: 40px 32px;
   }

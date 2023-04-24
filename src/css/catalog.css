@@ -128,6 +128,12 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 375px) {
+  .catalog-img-wrapper {
+    width: 335px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -136,10 +142,6 @@ a {
   .catalog-title {
     font-size: 40px;
     line-height: 1.1;
-  }
-
-  .catalog-img-wrapper {
-    width: 335px;
   }
 
   .catalog-overlay {

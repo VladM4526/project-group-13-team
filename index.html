@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/project-group-13-team/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/project-group-13-team/assets/index-ab89ea9f.css">
+    <link rel="stylesheet" href="/project-group-13-team/assets/index-77c01af4.css">
   </head>
   <body>
     <!-- header -->
@@ -86,7 +86,50 @@
 </section>
       
       <!-- about us -->
-      
+      <section class="about-us section">
+  <div class="about-wrap container">
+    <div class="wraper">
+      <h2 class="about-title">About us</h2>
+      <ul class="about-list-descrip">
+        <li class="about-list-item">
+          <p class="about-description">
+            Welcome to our premium watch collection, where luxury and style meet
+            functionality and precision. Our selection of timepieces embodies
+            the very best in Swiss craftsmanship and engineering, ensuring that
+            you'll always have a reliable and stylish accessory on your wrist.
+          </p>
+        </li>
+        <li class="about-list-item">
+          <p class="about-description">
+            At our premium watch collection, we believe that a watch is more
+            than just a timekeeping device – it's a statement piece that
+            reflects your personality and style. So why settle for anything less
+            than the best? Browse our collection today and discover the perfect
+            watch for you.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="about-gif-wrap">
+      <picture>
+        <source
+          srcset="/project-group-13-team/assets/watchspot-mobile-8996f4aa.gif "
+          media="(max-width:767px)"
+        />
+        <source
+          srcset="/project-group-13-team/assets/watchspot-aebc2176.gif "
+          media="(min-width:768px)"
+        />
+        <img
+          src="/img/modal-us/watchspot.gif"
+          class="about-gif"
+          alt="watchspot"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
       
       <!-- catalog -->
       <section id="catalog" class="catalog-section section">
@@ -869,7 +912,74 @@
 
       
       <!-- modal -->
-      
+      <div class="back-drop-wraper is-hidden" data-modal>
+  <div class="modal container">
+    <button type="button" class="btn-close-modal" data-modal-close></button>
+
+    <div class="modal-watch-card">
+      <img
+        class="img-watch-card"
+        srcset="/project-group-13-team/assets/buy-watch-1x-7d259911.jpg 1x, /project-group-13-team/assets/buy-watch-2x-ecde03a8.jpg 2x"
+        src="/project-group-13-team/assets/buy-watch-1x-7d259911.jpg"
+        alt="watch"
+        width="276"
+        height="274"
+      />
+      <p class="watch-name">Tube Watch S42 Date Steel With Black...</p>
+      <span class="watch-price">€395</span>
+    </div>
+    <div class="form-submit-policy-wrap">
+      <form class="modal-form">
+        <div class="input-wrap">
+          <label for="name" class="modal-label">Full name</label>
+          <input
+            type="text"
+            class="modal-input"
+            id="name"
+            placeholder="Enter your full name"
+            pattern="^[a-zA-Z]+$"
+            required
+          />
+        </div>
+        <div class="input-wrap">
+          <label for="email" class="modal-label">Email</label>
+          <input
+            type="email"
+            class="modal-input"
+            id="email"
+            placeholder="Enter your email "
+            required
+          />
+        </div>
+        <div class="input-wrap">
+          <label for="card-num" class="modal-label">Card number</label>
+          <input
+            type="text"
+            class="modal-input"
+            id="card-num"
+            placeholder="Enter card"
+            required
+          />
+        </div>
+        <div class="input-wrap">
+          <label for="comment" class="modal-label">Comments</label>
+          <textarea
+            name="textarea"
+            class="modal-textarea"
+            id="comment"
+            placeholder="Enter your text"
+          ></textarea>
+        </div>
+      </form>
+      <button type="submit" class="modal-btn-submit">SUBMIT</button>
+      <p class="modal-policy">
+        By clicking on “Send message” button, you agree to our Privacy Policy,
+        and allow Promodo to use this information for marketing purposes.
+      </p>
+    </div>
+  </div>
+</div>
+
       
       <!-- new watches -->
       <section class="section new-watches">

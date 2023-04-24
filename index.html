@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/project-group-13-team/assets/index-f0a67e74.js"></script>
-    <link rel="stylesheet" href="/project-group-13-team/assets/index-51980eba.css">
+    <script type="module" crossorigin src="/project-group-13-team/assets/index-075f515b.js"></script>
+    <link rel="stylesheet" href="/project-group-13-team/assets/index-d0f92048.css">
   </head>
   <body>
     <!-- header -->
@@ -913,7 +913,7 @@
     </ul>
 
     <div class="catalog-btn-wrapper">
-      <button class="catalog-btn" type="button">buy now</button>
+      <button class="catalog-btn" type="button" data-modal-open>buy now</button>
     </div>
   </div>
 </section>
@@ -922,7 +922,11 @@
       <!-- modal -->
       <div class="back-drop-wraper is-hidden" data-modal>
   <div class="modal container">
-    <button type="button" class="btn-close-modal" data-modal-close></button>
+    <button type="button" class="btn-close-modal" data-modal-close>
+      <svg class="modal-close-btn" width="20" height="20">
+        <use href="/project-group-13-team/assets/sprite-5ccf5458.svg#icon-close"></use>
+      </svg>
+    </button>
 
     <div class="modal-watch-card">
       <img
@@ -966,6 +970,7 @@
             class="modal-input"
             id="card-num"
             placeholder="Enter card"
+            pattern="^[0-9]+$"
             required
           />
         </div>
@@ -978,8 +983,8 @@
             placeholder="Enter your text"
           ></textarea>
         </div>
+        <button type="submit" class="modal-btn-submit">SUBMIT</button>
       </form>
-      <button type="submit" class="modal-btn-submit">SUBMIT</button>
       <p class="modal-policy">
         By clicking on “Send message” button, you agree to our Privacy Policy,
         and allow Promodo to use this information for marketing purposes.

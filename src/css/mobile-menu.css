@@ -41,9 +41,10 @@
 
 .menu-logo-text {
     font-size: 12px;
-    line-height: 12px;
+    line-height: 1;
     letter-spacing: -0.03em;
     color: #FFFFFF;
+    padding-left: 4px;
 }
 
 .mobile-menu-list {

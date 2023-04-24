@@ -110,6 +110,16 @@
     outline: none;
 }
 
+.modal-input:valid {
+    outline: none;
+}
+.modal-input:invalid {
+    outline: 1px solid red;
+}
+
+.modal-input:placeholder-shown {
+    outline: none;
+}
 .modal-textarea {
     resize: none;
     height: 170px;
@@ -159,6 +169,7 @@
 
     .modal {
         max-width: 744px;
+        height: auto;
         flex-direction: row;
         gap: 20px;
     }
@@ -197,5 +208,9 @@
 
     .modal-policy {
         padding-right: 92px;
+    }
+    .modal.container {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }

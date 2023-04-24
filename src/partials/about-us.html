@@ -23,11 +23,21 @@
       </ul>
     </div>
     <div class="about-gif-wrap">
-      <img
-        src="../img/modal-us/watchspot.gif"
-        class="about-gif"
-        alt="watchspot"
-      />
+      <picture>
+        <source
+          srcset="../img/about-us/watchspot-mobile.gif"
+          media="(max-width:767px)"
+        />
+        <source
+          srcset="../img/about-us/watchspot.gif"
+          media="(min-width:768px)"
+        />
+        <img
+          src="/img/modal-us/watchspot.gif"
+          class="about-gif"
+          alt="watchspot"
+        />
+      </picture>
     </div>
   </div>
 </section>

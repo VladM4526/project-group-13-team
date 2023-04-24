@@ -118,6 +118,13 @@
   }
 }
 
+/* mobale screen */
+@media screen and (min-width: 320px) {
+  .sale-img {
+    min-height: 297.15px;
+  }
+}
+
 .sale-img {
   max-height: 350px;
 }
@@ -125,7 +132,7 @@
 /* tablet screen */
 @media screen and (min-width: 768px) {
   .sale-img {
-    max-height: 614px;
+    min-height: 614px;
   }
 }
 
@@ -163,7 +170,7 @@
   margin-bottom: 16px;
 
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
 
   color: rgba(20, 20, 20, 0.5);
@@ -240,7 +247,7 @@
   margin-top: 09px;
 
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.01em;
 
   color: rgba(20, 20, 20, 0.5);

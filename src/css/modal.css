@@ -172,6 +172,7 @@
         height: auto;
         flex-direction: row;
         gap: 20px;
+        overflow-y: hidden;
     }
 
     .container {

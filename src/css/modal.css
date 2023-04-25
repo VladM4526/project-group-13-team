@@ -34,7 +34,7 @@
 }
 
 .modal-close-btn{
-    stroke:black;
+    stroke:#141414;
 }
 .btn-close-modal {
     position: absolute;
@@ -50,7 +50,7 @@
 
 .input-wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 12px;
 }
 
@@ -110,15 +110,14 @@
     outline: none;
 }
 
-.modal-input:valid {
-    outline: none;
+.modal-input:not(:placeholder-shown):required:valid {
+outline: none;
 }
-.modal-input:invalid {
+.modal-input:not(:placeholder-shown):required:invalid {
     outline: 1px solid red;
 }
-
-.modal-input:placeholder-shown {
-    outline: none;
+.modal-input:not(:placeholder-shown):required:invalid + .modal-label {
+    color:red;
 }
 .modal-textarea {
     resize: none;
@@ -170,14 +169,11 @@
     .modal {
         max-width: 744px;
         height: auto;
+        padding-left: 40px;
+        padding-right: 40px;
         flex-direction: row;
         gap: 20px;
         overflow-y: hidden;
-    }
-
-    .container {
-        padding-left: 40px;
-        padding-right: 40px;
     }
 
     .img-watch-card {
@@ -205,6 +201,7 @@
     .modal {
         max-width: 904px;
         gap: 40px;
+        border-radius: 8px;
     }
 
     .modal-policy {

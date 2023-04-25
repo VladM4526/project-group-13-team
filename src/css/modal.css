@@ -34,7 +34,7 @@
 }
 
 .modal-close-btn{
-    stroke:black;
+    stroke:#141414;
 }
 .btn-close-modal {
     position: absolute;
@@ -50,8 +50,9 @@
 
 .input-wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 12px;
+    
 }
 
 .img-watch-card {
@@ -110,16 +111,17 @@
     outline: none;
 }
 
-.modal-input:valid {
+.modal-input:not(:placeholder-shown):required:invalid + .modal-label {
+    color:red
+}
+.modal-input:not(:placeholder-shown):required:valid {
     outline: none;
 }
-.modal-input:invalid {
+
+.modal-input:not(:placeholder-shown):required:invalid {
     outline: 1px solid red;
 }
 
-.modal-input:placeholder-shown {
-    outline: none;
-}
 .modal-textarea {
     resize: none;
     height: 170px;
